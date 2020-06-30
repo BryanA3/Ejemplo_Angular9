@@ -1,0 +1,30 @@
+<h1 class="container bg-dark text-light text-center my-4 py-4">
+    ngFor
+</h1>
+
+<div class="container">
+    <h4 class="text-center">Consumo array con listas</h4>
+    <ul>
+        <li *ngFor="let elemento of cursos">
+            {{elemento}}
+        </li>
+    </ul>
+    <h4 class="text-center">Consumo array con objeos</h4>
+    <table class="table table-bordered table-hover">
+        <thead class='thead-dark '>
+            <th>#</th>
+            <th>TIPO</th>
+            <th>NOMBRE</th>
+            <th>EDAD</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let objeto of animales;index as i">
+                <td scope='row'>{{i+1}}</td>
+                <td>{{objeto.tipo}}</td>
+                <td>{{objeto.nombre}}</td>
+                <td>{{objeto.edad}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

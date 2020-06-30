@@ -1,0 +1,14 @@
+
+
+<h1 class="container bg-dark text-light text-center my-4 py-4">
+    ngClass [ngClass]
+</h1>
+
+<div class="container">
+    Activo: <b>{{activo}}</b><br>
+    <button class="btn btn-info m-3" (click)="activo='primero'">1ro</button>
+    <button class="btn btn-success" (click)="activo='segundo'">2do</button>
+    <p class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}">Lorem ipsum dolor, sit amet consectetur 			adipisicing elit. Voluptatum repellendus aspernatur quia, sit ducimus minus odit natus id molestias debitis 		repellat ab rerum necessitatibus eligendi possimus porro expedita est dolorem?</p>
+    <p class="text-danger d-none" [ngClass]="{'d-block':activo=='segundo'}">Lorem ipsum dolor, sit amet consectetur 	adipisicing elit. Praesentium dicta, cumque atque eaque iste reiciendis explicabo architecto iure nihil 				molestiae ipsum minus sint magnam corrupti recusandae! Dolores porro voluptatem quas!
+    </p>      
+</div>

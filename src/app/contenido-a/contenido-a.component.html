@@ -1,0 +1,7 @@
+<ul class="list-group list-group-flush ">
+  <a [routerLink]="['/Equipo',i]" class="list-group-item list-group-item-action"  *ngFor="let dato of equipo1, index as i">
+    <h4 class='text-primary'>Nombre:{{dato.nombre}}</h4>
+    <h5>Especialidad: {{dato.especialidad}} </h5>
+    <p><b>Descripción: </b>{{dato.descripcion}}</p>
+  </a>
+</ul>

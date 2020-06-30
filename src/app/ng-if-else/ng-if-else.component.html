@@ -1,0 +1,12 @@
+<h1 class="container bg-dark text-light text-center my-4 py-4">
+    ngIf/Else show2={{show2}}
+</h1>
+  
+  <div class="container">
+    <button class="btn btn-info mx-3" (click)="show2=false">Desactivar</button>
+    <button class="btn btn-success mx-3" (click)="show2=true">Activar</button>
+    <p class="text-info" *ngIf='show2; else showDos'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellendus aspernatur quia, sit ducimus minus odit natus id molestias debitis repellat ab rerum necessitatibus eligendi possimus porro expedita est dolorem?</p>
+    <ng-template #showDos>
+      <p class="text-danger">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dicta, cumque atque eaque iste reiciendis explicabo architecto iure nihil molestiae ipsum minus sint magnam corrupti recusandae! Dolores porro voluptatem quas!</p>
+    </ng-template>
+  </div>

@@ -1,0 +1,10 @@
+<h1 class="container bg-dark text-light text-center my-4 py-4">
+    ngif show={{show}}
+  </h1>
+  
+  <div class="container">
+    <button class="btn btn-info mx-3" (click)="show=false">Desactivar</button>
+    <button class="btn btn-success mx-3" (click)="show=true">Activar</button>
+    <p class="text-info" *ngIf='show'>Lorem ipsum doledita est dolorem?</p>
+    <p class="text-danger">Lorem iptiae ipsum minus sint magnam corrupti recusandae! </p>
+  </div>
